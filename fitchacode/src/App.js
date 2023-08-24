@@ -1,7 +1,7 @@
 import "./style/App.css";
 import { Route, Routes } from "react-router-dom";
 import AppContext from "./context";
-import Interests from "./pages/homepage/Interests/Interests";
+import Interests from "./pages/Interests/Interests";
 
 function App() {
   return (
