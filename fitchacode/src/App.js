@@ -8,7 +8,7 @@ function App() {
       <div className="App">
         <Routes>
           <Route path="/" element={<div>Home</div>} />
-          <Route path="Register" element={<div>Register</div>} />
+          <Route path="Register" element={<div>Registerлол</div>} />
         </Routes>
       </div>
     </AppContext.Provider>
