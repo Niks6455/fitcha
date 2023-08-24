@@ -1,11 +1,17 @@
-
-import './style/App.css';
+import "./style/App.css";
+import { Route, Routes } from "react-router-dom";
+import AppContext from "./context";
 
 function App() {
   return (
-    <div className="App"> 
-          Learn React
-    </div>
+    <AppContext.Provider>
+      <div className="App">
+        <Routes>
+          <Route path="/" element={<div>Home</div>} />
+          <Route path="Register" element={<div>Register</div>} />
+        </Routes>
+      </div>
+    </AppContext.Provider>
   );
 }
 
