@@ -1,5 +1,6 @@
 import React from "react";
 import style from "./SelectionTour.module.scss";
+import { Link } from "react-router-dom";
 function SelectionTour() {
   return (
     <div className={style.selection_tour}>
@@ -16,7 +17,9 @@ function SelectionTour() {
         <img src="./img/icon/cart1.svg" alt="logo"></img>
       </div>
       <div style={{ marginTop: "40px" }} className={style.button}>
-        <div className={style.button_inner}>Создать тур</div>
+        <Link to="../Constructor">
+          <div className={style.button_inner}>Создать тур</div>
+        </Link>
       </div>
       <h2>ИЛИ</h2>
       <h2>
