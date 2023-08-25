@@ -1,0 +1,65 @@
+
+.ActiveCard{
+  margin-top: 30px ;
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  padding: 10px;
+  box-sizing: border-box;
+  .ActiveCard_inner{
+  display: flex;
+  
+}
+.ActiveCard_img{
+margin: 5px 5px 5px 0px;
+  img{   
+  height: 120px;
+  width: 200px;
+  margin-right: 10px;
+  }
+}
+.ActiveCard_info{
+  display: block;
+  font-size: 16px;
+  
+}
+.concluz{
+  font-size: 14px;
+}
+.blue_color{
+  color: #2032D3;
+}
+
+.popup {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-content {
+  position: relative;
+  max-width: 90%;
+  max-height: 90%;
+}
+
+.popup-content img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.popup-content button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+}
+.street{
+  position: relative;
+  width: 100%;
+  
+}

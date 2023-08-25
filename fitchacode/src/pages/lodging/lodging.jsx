@@ -5,8 +5,7 @@ import Headers from "../../component/header/header";
 import { Link } from "react-router-dom";
 import Button from "../../component/button/button";
 function Lodging() {
-  return (
-   
+  return (   
     <Layout> 
     <Headers></Headers>
   
