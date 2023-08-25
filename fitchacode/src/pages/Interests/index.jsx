@@ -1,5 +1,6 @@
 import React from "react";
 import style from "./Interests.module.scss";
+import { Link } from "react-router-dom";
 function Interests() {
   const arr = [
     "Памятники",
@@ -52,8 +53,10 @@ function Interests() {
             </div>
           </div>
         </div>
+        <Link to="/SelectionTour">Перийти</Link>
       </main>
     </div>
+    
   );
 }
 

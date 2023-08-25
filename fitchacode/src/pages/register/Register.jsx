@@ -2,8 +2,6 @@ import React from 'react';
 import { useForm} from "react-hook-form";
 import styles from "./Register.module.scss";
 import Layout from "./../../component/Layout/Layout"
-import logo2 from './../../img/logo/logo2.svg'
-import eye from "./../../img/icon/close-ease.png"
 import Footer from "./../../component/footer/footer"
 import { Link } from 'react-router-dom';
 function Register() {
@@ -33,7 +31,7 @@ function Register() {
     <div className={styles.register}> 
          <Layout>
            <div className={styles.logo}>
-              <img src={logo2}></img>
+           <img src="./img/logo/logo2.svg" ></img>
            </div>
 
            <div className={styles.buttonReg}>
@@ -74,7 +72,7 @@ function Register() {
                          })}
                          
                      /><div className={styles.eye_flex}>
-                              <button className={styles.eye}><img src={eye}></img></button>
+                              <button className={styles.eye}><img src="./img/icon/close-ease.png"></img></button>
                      </div>
              
                  </label>
@@ -92,7 +90,7 @@ function Register() {
                          })}
                          
                      /><div className={styles.eye_flex}>
-                              <button className={styles.eye}><img src={eye}></img></button>
+                              <button className={styles.eye}><img src="./img/icon/close-ease.png"></img></button>
                      </div>
              
                  </label>

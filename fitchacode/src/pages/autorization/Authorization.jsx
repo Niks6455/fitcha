@@ -2,8 +2,6 @@ import React from 'react';
 import { useForm} from "react-hook-form";
 import styles from "./Authorization.module.scss";
 import Layout from "../../component/Layout/Layout"
-import logo2 from './../../img/logo/logo2.svg'
-import eye from "./../../img/icon/close-ease.png"
 import Footer from "../../component/footer/footer"
 import { Link } from 'react-router-dom';
 function Authorization() {
@@ -33,7 +31,7 @@ function Authorization() {
     <div className={styles.authorization}> 
          <Layout>
            <div className={styles.logo}>
-              <img src={logo2}></img>
+              <img src="./img/logo/logo2.svg" ></img>
            </div>
 
            <div className={styles.buttonReg}>
@@ -74,7 +72,7 @@ function Authorization() {
                          })}
                          
                      /><div className={styles.eye_flex}>
-                              <button className={styles.eye}><img src={eye}></img></button>
+                              <button className={styles.eye}><img src="./img/icon/close-ease.png"></img></button>
                      </div>
              
                  </label>
@@ -88,6 +86,7 @@ function Authorization() {
             </button>
         </div>
         </form>
+        <Link to="/Interests">Перийти</Link>
         
          </Layout>
          <Footer></Footer>

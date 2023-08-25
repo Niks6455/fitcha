@@ -15,7 +15,9 @@ function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="Register" element={<Register />} />
           <Route path="Authorization" element={<Authorization />} />
-
+          <Route path="Interests" element={<Interests />} />
+          <Route path="SelectionTour" element={<SelectionTour />} />
+          
         </Routes>
       </div>
     </AppContext.Provider>
