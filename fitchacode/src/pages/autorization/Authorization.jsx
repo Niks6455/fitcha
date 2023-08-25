@@ -35,9 +35,10 @@ function Authorization() {
            </div>
 
            <div className={styles.buttonReg}>
-            <Link style={{ textDecoration: 'none', color:"#000" }} to="/Register"><p className={styles.butnoactive}>Регистрация</p></Link>
+           <p className={styles.butactive}>Авторизация</p>
                 <p className={styles.buttonslash}>/</p>
-             <p className={styles.butactive}>Авторизация</p>
+                <Link style={{ textDecoration: 'none', color:"#000" }} to="/Register"><p className={styles.butnoactive}>Регистрация</p></Link>
+         
            </div>
 
         <form>

@@ -35,9 +35,10 @@ function Register() {
            </div>
 
            <div className={styles.buttonReg}>
-              <p className={styles.butactive}>Регистрация</p>
+              <Link  style={{ textDecoration: 'none', color:"#000"  }} to="/"><p className={styles.butnoactive}>Авторизация</p></Link>
+              
                 <p className={styles.buttonslash}>/</p>
-              <Link  style={{ textDecoration: 'none', color:"#000"  }} to="/Authorization"><p className={styles.butnoactive}>Авторизация</p></Link>
+              <p className={styles.butactive}>Регистрация</p>
            </div>
 
         <form>
