@@ -1,0 +1,137 @@
+.constructor {
+  padding-left: 20px;
+  padding-right: 20px;
+  .logo {
+    padding-top: 25px;
+    img {
+      width: 120px;
+      height: 38px;
+    }
+  }
+
+  .menu {
+    width: 100%;
+    display: flex;
+    margin-top: 20px;
+    .menu_inner {
+      display: flex;
+      flex: 1;
+      justify-content: center;
+      font-size: 18px;
+
+      .menu_inner_inner {
+        display: flex;
+        padding: 5px 8px;
+        box-shadow: 0px 4px 1px rgba(0, 0, 0, 0.04);
+        border-radius: 10px;
+        background-color: #ffffff;
+      }
+      .active {
+        transform: rotate(180deg);
+      }
+    }
+  }
+}
+.covert {
+  display: flex;
+  position: absolute;
+  flex-wrap: wrap;
+  width: 200px;
+  height: 300px;
+  padding-bottom: 15px;
+  box-shadow: 4px 4px 2px rgba(0, 0, 0, 0.04);
+  overflow: auto;
+  ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  li {
+    margin: 15px;
+    margin-left: 5px;
+    font-size: 20px;
+  }
+  //   li:before {
+  //     content: "";
+  //     display: inline-block;
+  //     width: 18px;
+  //     height: 18px;
+  //   }
+  //   li:before {
+  //     background-color: blue;
+  //   }
+  .li_active {
+    display: inline-block;
+    margin-right: 8px;
+    width: 18px;
+    height: 18px;
+    border: 2px solid;
+  }
+  .bottom {
+    display: flex;
+  }
+
+  .bottom_inner {
+    margin: 0px 4px 0px 4px;
+    .bottom_inner_inner {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 3px;
+      background-color: #2032d3;
+      color: #fff;
+      border-radius: 8px;
+    }
+  }
+}
+.param {
+  opacity: 0.4;
+
+  display: flex;
+  position: absolute;
+  background-color: #000000;
+
+  width: 100%;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.param_inner {
+  display: flex;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  flex-wrap: wrap;
+  background-color: #ffffff;
+  width: 100%;
+  height: 660px;
+  box-shadow: 5px 0px 10px rgba(0, 0, 0, 3.04);
+  border-radius: 10px;
+  flex-direction: row;
+
+  .p {
+    margin: 20px auto;
+    color: #2032d3;
+    font-size: 30px;
+    height: 20px;
+  }
+  .container {
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin: 0 50px;
+    p {
+      font-size: 24px;
+    }
+    input {
+      width: 100%;
+      padding: 7px;
+      border-radius: 10px;
+      border: none;
+      box-shadow: 0px 3px 4px #b3b3b3;
+      font-size: 20px;
+      padding-left: 25px;
+    }
+  }
+}
