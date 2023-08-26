@@ -7,6 +7,17 @@ import InputRangeSmooth from "../../component/PriceRangeSlider";
 import { Link } from "react-router-dom";
 
 function Constructor() {
+  const handleClick = () => {
+    // Замените координаты на нужные
+    const sourceLat = 55.75396;
+    const sourceLon = 37.620393;
+    const destinationLat = 55.748488;
+    const destinationLon = 37.604414;
+    const url =
+      "https://yandex.ru/maps/11499/dubai/?ll=55.341383%2C25.098563&mode=routes&rtext=25.092453%2C55.155812~25.235501%2C55.300404~25.105750%2C55.393202~24.964491%2C55.390971&rtt=auto&ruri=~ymapsbm1%3A%2F%2Forg%3Foid%3D134711015211~~&source=constructor&z=10.65";
+
+    window.open(url, "_blank");
+  };
   const [selectedDate, setSelectedDate] = useState(null);
   const [isParam, setIsParam] = useState(false);
   const [isFilter, setIsFilter] = useState(false);
@@ -276,9 +287,9 @@ function Constructor() {
         <Place imgurl="./img/icon/mon6.png" name={"Святая Виктория"} />
 
         <div style={{ marginTop: "20px" }} className={style.button}>
-          <Link to="./../MapConstructor">
-            <div className={style.button_inner}>Построить</div>
-          </Link>
+          <div onClick={handleClick} className={style.button_inner}>
+            Построить
+          </div>
         </div>
       </div>
     </div>

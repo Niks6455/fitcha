@@ -1,10 +1,23 @@
-import React from "react";
+import React, { useState } from "react";
 import style from "./Interests.module.scss";
 import { Link } from "react-router-dom";
+
 function Interests() {
+  const [isActive, setIsActive] = useState([]);
+
+  const funActive = (index) => {
+    const updatedActive = [...isActive];
+    if (updatedActive[index] === "blue") {
+      updatedActive[index] = "#d9d9d9"; // Если текущий цвет - blue, меняем на серый
+    } else {
+      updatedActive[index] = "blue"; // Иначе меняем на синий
+    }
+    setIsActive(updatedActive);
+  };
+
   const arr = [
     "Памятники",
-    "Искуссвто",
+    "Искусство",
     "Театры",
     "Музеи",
     "Храмы",
@@ -20,9 +33,21 @@ function Interests() {
     "Быстрое питание",
     "Столовые",
   ];
-  //   for (var i = 1; i <= 16; i++) {
-  //     arr.push({ img: `icon${i}b` });
-  //   }
+
+  const Item = (props) => {
+    return (
+      <div
+        className={style.plitka}
+        style={{ backgroundColor: props.isActive[props.index] || "#d9d9d9" }}
+        onClick={() => funActive(props.index)}
+      >
+        <div className={style.icon}>
+          <img src={`./img/icon/icon${props.index + 1}b.svg`} alt="icon" />
+        </div>
+        <p>{props.el}</p>
+      </div>
+    );
+  };
 
   return (
     <div className={style.interests}>
@@ -34,29 +59,26 @@ function Interests() {
         <h3>Это поможет более точно подбирать рекомендации для вас</h3>
         <div className={style.container}>
           {arr.map((el, index) => (
-            <div className={style.plitka}>
-              <div className={style.icon}>
-                <img src={`./img/icon/icon${index + 1}b.svg`} alt="icon" />
-              </div>
-              <p>{el}</p>
-            </div>
+            <Item el={el} index={index} isActive={isActive} key={index} />
           ))}
           <div style={{ marginTop: "80px" }} className={style.button}>
-            <div className={style.button_inner}>Продолжить</div>
+            <Link to="./../SelectionTour">
+              <div className={style.button_inner}>Продолжить</div>
+            </Link>
           </div>
           <div className={style.button}>
-            <div
-              style={{ backgroundColor: "#AEAEAE", marginTop: "10px" }}
-              className={style.button_inner}
-            >
-              Пропустить
-            </div>
+            <Link to="./../SelectionTour">
+              <div
+                style={{ backgroundColor: "#AEAEAE", marginTop: "10px" }}
+                className={style.button_inner}
+              >
+                Пропустить
+              </div>
+            </Link>
           </div>
         </div>
-        <Link to="/SelectionTour">Перийти</Link>
       </main>
     </div>
-    
   );
 }
 

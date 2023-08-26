@@ -29,7 +29,9 @@ function SelectionTour() {
         <img src="./img/icon/cart2.svg" alt="logo"></img>
       </div>
       <div style={{ marginTop: "40px" }} className={style.button}>
-        <div className={style.button_inner}>Подобрать тур</div>
+        <Link to="./../Lodging">
+          <div className={style.button_inner}>Подобрать тур</div>
+        </Link>
       </div>
     </div>
   );
