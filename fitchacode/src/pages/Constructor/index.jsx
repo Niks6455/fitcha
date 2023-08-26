@@ -4,6 +4,7 @@ import style from "./Constructor.module.scss";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import InputRangeSmooth from "../../component/PriceRangeSlider";
+import { Link } from "react-router-dom";
 
 function Constructor() {
   const [selectedDate, setSelectedDate] = useState(null);
@@ -273,6 +274,12 @@ function Constructor() {
         <Place imgurl="./img/icon/mon4.png" name={"Андреа Верроккьо"} />
         <Place imgurl="./img/icon/mon5.png" name={"Памятник «Рабство»"} />
         <Place imgurl="./img/icon/mon6.png" name={"Святая Виктория"} />
+
+        <div style={{ marginTop: "20px" }} className={style.button}>
+          <Link to="./../MapConstructor">
+            <div className={style.button_inner}>Построить</div>
+          </Link>
+        </div>
       </div>
     </div>
   );
